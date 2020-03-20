@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ page.seo_title }}</title>
+    
+    {% for post in site.pages %}
+	{% if post.pagename == page.pagename %}	
+    <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+    {% endif %}  			
+	{% endfor %}
+
+    {% include meta.html %}
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    {% if page.specialfont %}	
+
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+
+    {% endif %} 
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+
+    <link rel="stylesheet" href="https://indestructibletype.com/fonts/Jost.css" type="text/css" charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TV58CZX');</script>
+<!-- End Google Tag Manager -->
+  </head>
+
+  <body {% if page.dotclock %}class="dotclock"{% endif %} {% if page.spaceclock %}class="spaceclock"{% endif %} {% if page.rtl %}id="arabic"{% endif %}>
+	  
+	  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TV58CZX"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+<div class="container">
+
+
+
+    <h1>	         
+      
+      {% if page.lang == "es" %}
+      Reloj Bitcoin
+     {% elsif page.lang == 'ko' %}
+     비트코인 시계
+     {% elsif page.lang == 'cn' %}
+     比特币时钟
+     {% elsif page.lang == 'uk' %}
+     Біткоїн-годинник
+     {% elsif page.lang == 'de' %}
+     Bitcoin-Uhr
+     {% elsif page.lang == 'ru' %}
+     Биткоин-часы
+     {% elsif page.lang == 'it' %}
+     Bitcoin Clock
+     {% elsif page.lang == 'nl' %}
+     Bitcoin-klok
+     {% elsif page.lang == 'ro' %}
+     Ceasul Bitcoin
+     {% elsif page.lang == 'en' %}
+     Bitcoin Clock
+     {% elsif page.lang == 'pt' %}
+     {{ site.name }}
+     {% elsif page.lang == 'ar' %}
+     ساعة البتكوين
+     {% elsif page.lang == 'cs' %}
+     Bitcoinové hodiny
+     {% elsif page.lang == 'he' %}
+     שעון הביטקוין 
+     {% elsif page.lang == 'vn' %}
+     Đồng hồ Bitcoin   
+     {% elsif page.lang == 'pl' %}
+     Zegar Bitcoinów
+     {% elsif page.lang == 'th' %}
+     นาฬิกา Bitcoin
+     {% elsif page.lang == 'id' %}
+     Jam Bitcoin
+     {% elsif page.lang == 'tr' %}
+     Bitcoin Saati
+     {% elsif page.lang == 'fr' %}
+     Bitcoin Clock
+     {% elsif page.lang == 'el' %}
+     Ρολόι Bitcoin
+     {% elsif page.lang == 'ms' %}
+      Jam Bitcoin
+     {% endif %}</h1>
+  
+    
+    {{ content }}
+
+    <img class="path" src="/IMG/path1.png" alt="">
+    
+    <footer>
+
+        <p>Bitcoin Clock - a project by <span><a href="https://www.buybitcoinworldwide.com/">Buy Bitcoin Worldwide.</a></span></p>
+        <a href="https://www.buybitcoinworldwide.com/">
+        <img style="max-width: 350px !important;" src="/IMG/logofooter.png" alt="buy bitcoin worldwide">
+      </a>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+{% include analytics.html %}
+
+
+
+</body>
+</html>
