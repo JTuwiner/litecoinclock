@@ -215,11 +215,11 @@ pagename: clock
 <script>
     var height = GLOBAL_BLOCKHEIGHT;
     jQuery(document).ready(function ($) {
-        var total_number = 12.5 * (height - 472500) + 16406250;
+        var total_number = 12.5 * (height - 1680000) + 63000000;
         var append_html = "<span></span>";
 
 
-        var til_halving = 630000 - height;
+        var til_halving = 2520000 - height;
         append_html += "<b>Blocks Until Halving:</b> " + til_halving.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
         // var block_time = 9.69166666667;
