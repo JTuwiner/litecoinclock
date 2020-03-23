@@ -222,12 +222,11 @@ pagename: clock
         var til_halving = 2520000 - height;
         append_html += "<b>Blocks Until Halving:</b> " + til_halving.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-        // var block_time = 9.69166666667;
         var minutes_til_halving = til_halving * GLOBAL_BLOCKTIME;
         var days_til_halving = minutes_til_halving / (24 * 60);
         var days_remainder = days_til_halving - Math.floor(days_til_halving);
         var minutes = days_remainder - Math.floor(days_remainder);
-        var percent_done = (((height % 210000) / 210000) * 360);
+        var percent_done = (((height % 840000) / 840000) * 360);
 
         $(".minutes").css("transform", "rotate(" + percent_done + "deg)");
 
@@ -245,11 +244,12 @@ pagename: clock
 
         if (month === 4) {
             var month_name = "April";
-        } else if (month === 5) {
-            var month_name = "May";
-        } else if (month === 3) {
-            var month_name = "March";
+        } else if (month === 7) {
+            var month_name = "July";
+        } else if (month === 8) {
+            var month_name = "August";
         }
+        
 
         $('#date_eta').append(month_name + " " + day + ", " + year);
 
