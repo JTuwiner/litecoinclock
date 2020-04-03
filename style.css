@@ -1,7 +1,6 @@
 body {
-    background-image: linear-gradient(to bottom right, #282C40, #292C3B);
-    background-repeat: no-repeat;
-    border-top: 10px solid #FFCD3B;
+	background-image: linear-gradient(to bottom right,#d3d3d3,#b8b8b8);
+	border-top: 10px solid #00aeff;    background-repeat: no-repeat;
     margin: 0;
     padding: 0;
 }
@@ -15,9 +14,9 @@ body {
 
 
 
-  a {
-      color: #FFCD46;
-  }
+  a {
+color: #00aeff;
+}
 
 
 img {
@@ -126,7 +125,7 @@ display: none;
 #hours_calc,
 #days_calc {
     font-size: 46px;
-    color: #FFCD46;
+    color: #00aeff;
     font-weight: 500;
 }
 
@@ -141,7 +140,7 @@ display: none;
 
 #date_eta {
     font-size: 22px;
-    color: #FFCD46;
+    color: #00aeff;
 }
 
 .container_text {
@@ -154,7 +153,7 @@ display: none;
 }
 
 .container_text h2 {
-    color: #FFCD46;
+    color: #fff;
     font-size: 34px;
     line-height: 39px;
     padding-top: 2rem;
@@ -162,7 +161,7 @@ display: none;
 }
 
 .container_text p {
-    color: #fff;
+    color: #2b2b2b;
     font-size: 20px;
     line-height: 34px;
     font-family: 'Inter', sans-serif;
@@ -223,6 +222,8 @@ display: none;
     height: 5%;
     z-index: 10;
 }
+
+
 
 
 
