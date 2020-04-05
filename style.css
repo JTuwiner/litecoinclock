@@ -15,8 +15,12 @@ body {
 
 
 
-a, a:visited {
+a, a:visited, a:link, a:active {
 color: #9de0ff !important;
+}
+
+a:hover {
+text-decoration: underline;
 }
 
 
