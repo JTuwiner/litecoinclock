@@ -15,8 +15,8 @@ body {
 
 
 
-  a, a:visited {
-color: #9de0ff;
+a, a:visited {
+color: #9de0ff !important;
 }
 
 
