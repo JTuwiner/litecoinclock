@@ -15,8 +15,8 @@ body {
 
 
 
-  a {
-color: #00aeff;
+  a, a:visited {
+color: #9de0ff;
 }
 
 
@@ -141,7 +141,7 @@ display: none;
 
 #date_eta {
     font-size: 22px;
-    color: #00aeff;
+    color: #00354e;
 }
 
 .container_text {
@@ -162,7 +162,7 @@ display: none;
 }
 
 .container_text p {
-    color: #191818;
+    color: #fff;
     font-size: 20px;
     line-height: 34px;
     font-family: 'Inter', sans-serif;
